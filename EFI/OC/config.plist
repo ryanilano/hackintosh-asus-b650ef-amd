@@ -14,6 +14,14 @@
 				<key>Path</key>
 				<string>SSDT-ASUS-B650E-F.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-RX6950XT.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-RX6950XT.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
@@ -948,7 +956,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>icCB4v//AP+BygAAAQC5dwIAAA==</data>
 				<key>Identifier</key>
@@ -978,7 +986,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>icCB4v//AP+BygAAAQC5dwIAAA==</data>
 				<key>Identifier</key>
@@ -1146,7 +1154,7 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>F5K908401CDFHDDA8</string>
+			<string>F5K002902GUK3F71F</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -1160,9 +1168,9 @@
 			<key>SystemProductName</key>
 			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string>F5KY90YAP7QM</string>
+			<string>F5KHRZYYP7QM</string>
 			<key>SystemUUID</key>
-			<string>53F713A4-B307-4EFE-A8FC-F005432E9AB9</string>
+			<string>277788DF-4A49-4632-A8B4-0B63F338E32B</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
