@@ -22,6 +22,8 @@
 | BIOS      | 1224   |
 
 ## Notes
-Generate serials using GenSMBIOS for MacPro7,1 and edit config.plist
-macOS has a 15 port limit so I've disabled USB 2.0 ports on the rear IO. Inspect USBMap.kext for labels and notes
+Generate your own serial using GenSMBIOS for MacPro7,1 and add it to config.plist before
+
+macOS has a 15 port limit so I've disabled USB 2.0 ports on the rear IO. Inspect USBMap.kext for labels and notes  
+
 Thank you to everyone at AMD-OSX for being so helpful!
