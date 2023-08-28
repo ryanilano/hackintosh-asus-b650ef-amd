@@ -25,10 +25,9 @@
 ## Setup Notes
 Generate your own serial using GenSMBIOS for MacPro7,1 and add it to config.plist before connecting to iCloud. Adjust the GPU and CPU if you have a different setup. I dualboot to Windows 10 on a different drive. If your time is always off check out [Fix Windows and macOS Showing Different Times When Dual Booting](https://www.applegazette.com/mac/fix-windows-and-macos-showing-different-times-dual-booting/). 
 ### Performance
-
+I'm running Eco Mode 105W TDP which gives me 98% of the stock performance while generating much less heat while using less electricity. I'm also running Curve Optimizer with -25 on all cores. Run Ryzen Master in Windows to figure out the correct curves for your specific CPU.
 
 ![Geekbench 6.01 Benchmark - Single-Core: 2594, Multi-Core: 16942](https://raw.githubusercontent.com/ryanilano/hackintosh-asus-b650ef-amd/master/benchmarks/benchmark-2023-0822-geekbench6.png "Geekbench 6.01 Benchmark")
-I'm running Eco Mode 105W TDP which gives me 98% of the stock performance while generating much less heat while using less electricity. I'm also running Curve Optimizer with -25 on all cores. Run Ryzen Master in Windows to figure out the correct curves for your specific CPU.
 
 ### Known Issues
 Virtualization is a pain to get working in Ventura. You can [run Docker on AMD OpenCore using `docker-machine` and an older version of VirtualBox](https://gist.github.com/slykar/e92732be9bf81a71e08068245656d70e?permalink_comment_id=4105556#gistcomment-4105556) but I haven't personally gotten it to work. If you can help me please reach out!
