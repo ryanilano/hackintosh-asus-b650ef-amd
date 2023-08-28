@@ -1,4 +1,5 @@
-## Hardware
+## Configuration
+### Hardware
 
 | Component        | Model                         			|
 | ---------------- | --------------------------------------	|
@@ -13,20 +14,22 @@
 | Storage NVMe     | Crucial P3 Plus 2TB					|
 | Storage SSD      | Samsung 870 EVO 1TB					|
 | Storage NVMe     | Samsung 860 EVO 1TB					|
-## Software
+### Software
 
 | Component | Model  	|
 | --------- | --------- |
-| OpenCore  | 0.9.1		|
-| macOS     | 13.4.1(c)	|
+| OpenCore  | 0.9.4		|
+| macOS     | 13.5.1	|
 | BIOS      | 1636   	|
 
-## Notes
-Generate your own serial using GenSMBIOS for MacPro7,1 and add it to config.plist before connecting to iCloud
+## Setup Notes
+Generate your own serial using GenSMBIOS for MacPro7,1 and add it to config.plist before connecting to iCloud. Adjust the GPU and CPU if you have a different setup.
+### Performance
+I'm running Eco Mode 105W TDP which gives me 98% of the stock performance while generating much less heat while using less electricity. I'm also running Curve Optimizer with -25 on all cores. Run Ryzen Master in Windows to figure out the correct curves for your specific CPU.
+### Known Issues
+Virtualization is a pain to get working in Ventura. You can [run Docker on AMD OpenCore using `docker-machine` and an older version of VirtualBox](https://gist.github.com/slykar/e92732be9bf81a71e08068245656d70e?permalink_comment_id=4105556#gistcomment-4105556) but I haven't personally gotten it to work. If you can help me please reach out!
 
-## Shout Outs!
-Thank you to everyone at [AMD-OSX](https://amd-osx.com) for being so helpful!
-## Known Issues
+## To Do
 Edhawk was kind enough to point out a USB issue and explain how Apple handles USB limits per controller. Intel systems typically have one USB controller while its not unusual for AMD systems to have 2-3.
 
 > You should be aware that the 15 port USB limit is not the same when using an Intel or AMD build. The most important thing to remember is that the 15 port limit is per controller. This makes a huge difference on an AMD system.
@@ -36,3 +39,6 @@ Edhawk was kind enough to point out a USB issue and explain how Apple handles US
 > I have seen AMD motherboards with the XHC0 controller activating 14 ports, the XHC1 controller activating 9 ports and the PTXH controller activating 9 ports, giving a total of 32 active USB ports, but none of the three USB controllers are activating more than 15 ports, so they all stay within the limit imposed by Apple for each USB Controller.
 
 The USB mapping kext included in the repo DOES work but it could be better! I'll update that soon! ~~macOS has a 15 port limit so I've disabled USB 2.0 ports on the rear IO~~ Inspect [USBMap.kext](https://github.com/ryanilano/hackintosh-asus-b650ef-amd/blob/master/EFI/OC/Kexts/USBMap.kext/Contents/Info.plist) for labels and notes.
+
+## Shout Outs!
+Thank you to everyone at [AMD-OSX](https://amd-osx.com) for being so helpful!
