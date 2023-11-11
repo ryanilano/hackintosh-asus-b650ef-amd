@@ -18,9 +18,9 @@
 
 | Component | Model  	|
 | --------- | --------- |
-| OpenCore  | 0.9.4		|
-| macOS     | 13.5.1	|
-| BIOS      | 1636   	|
+| OpenCore  | 0.9.6		|
+| macOS     | 13.6.1	|
+| BIOS      | 1654   	|
 
 ## Setup Notes
 Generate your own serial using GenSMBIOS for MacPro7,1 and add it to config.plist before connecting to iCloud. Adjust the GPU and CPU if you have a different setup. I dualboot to Windows 10 on a different drive. If your time is always off check out [Fix Windows and macOS Showing Different Times When Dual Booting](https://www.applegazette.com/mac/fix-windows-and-macos-showing-different-times-dual-booting/). 
@@ -33,6 +33,8 @@ I'm running Eco Mode 105W TDP which gives me 98% of the stock performance while 
 Virtualization is a pain to get working in Ventura. You can [run Docker on AMD OpenCore using `docker-machine` and an older version of VirtualBox](https://gist.github.com/slykar/e92732be9bf81a71e08068245656d70e?permalink_comment_id=4105556#gistcomment-4105556) but I haven't personally gotten it to work. If you can help me please reach out!
 
 ## To Do
+Upgrading to Bios 1807 throws a bunch of errors. The issue seems to be related to ACPI/SSDT/DSDT errors that the new BIOS may have introduced. Reverting back to 1654 immediately fixed boot issues. I'll look into this later
+
 Edhawk was kind enough to point out a USB issue and explain how Apple handles USB limits per controller. Intel systems typically have one USB controller while its not unusual for AMD systems to have 2-3.
 
 > You should be aware that the 15 port USB limit is not the same when using an Intel or AMD build. The most important thing to remember is that the 15 port limit is per controller. This makes a huge difference on an AMD system.
