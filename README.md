@@ -16,11 +16,14 @@
 | Storage NVMe     | Samsung 860 EVO 1TB					|
 ### Software
 
-| Component | Model  	|
+| Software  | Version  	|
 | --------- | --------- |
-| OpenCore  | 0.9.6		|
-| macOS     | 13.6.1	|
-| BIOS      | 1654   	|
+| OpenCore  | 0.9.9		|
+| macOS     | 13.6.6	|
+| BIOS      | 2613   	|
+
+## Bios Notes
+This update includes a [DSDT fix](https://macos86.it/topic/6542-bug-fix-for-am5-new-firmware-motherboards-dsdt-fix/) which addresses a bug that prevented macOS from loading properly. This bug affects new firmware code in [Asus B650E-F BIOS updates](https://rog.asus.com/motherboards/rog-strix/rog-strix-b650e-f-gaming-wifi-model/helpdesk_bios/) after v1654. Shoutouts to Lorys89 for the fix.
 
 ## Setup Notes
 Generate your own serial using GenSMBIOS for MacPro7,1 and add it to config.plist before connecting to iCloud. Adjust the GPU and CPU if you have a different setup. I dualboot to Windows 10 on a different drive. If your time is always off check out [Fix Windows and macOS Showing Different Times When Dual Booting](https://www.applegazette.com/mac/fix-windows-and-macos-showing-different-times-dual-booting/). 
@@ -30,7 +33,7 @@ I'm running Eco Mode 105W TDP which gives me 98% of the stock performance while 
 ![Geekbench 6.01 Benchmark - Single-Core: 2594, Multi-Core: 16942](https://raw.githubusercontent.com/ryanilano/hackintosh-asus-b650ef-amd/master/benchmarks/benchmark-2023-0822-geekbench6.png "Geekbench 6.01 Benchmark")
 
 ### Known Issues
-Virtualization is a pain to get working in Ventura. You can [run Docker on AMD OpenCore using `docker-machine` and an older version of VirtualBox](https://gist.github.com/slykar/e92732be9bf81a71e08068245656d70e?permalink_comment_id=4105556#gistcomment-4105556) but I haven't personally gotten it to work. If you can help me please reach out!
+Virtualization is a pain to get working on AMD hackintoshes. You can [run Docker on AMD OpenCore using `docker-machine` and an older version of VirtualBox](https://macos86.it/topic/6535-guidevirtualbox-on-sonoma-and-amd-hackintosh/) but I haven't personally gotten it to work. If you can help me please reach out!
 
 ## To Do
 Upgrading to Bios 1807 throws a bunch of errors. The issue seems to be related to ACPI/SSDT/DSDT errors that the new BIOS may have introduced. Reverting back to 1654 immediately fixed boot issues. I'll look into this later
