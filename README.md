@@ -1,8 +1,8 @@
-## The Intro and Bittersweet End?
+## The Bittersweet End?
 
-Last month Apple announced that Tahoe would be the last version of macOS to support Intel processors. Other than upgrading this repo from Ventura to Tahoe I don't expect to see any future updates to the repo. In late 2025 my advice is don't go the hackintosh route unless you've already got the equipment or you really like to tinker.
+Last month Apple announced that Tahoe would be the last version of macOS to support Intel processors. Other than upgrading from Ventura to Tahoe I don't expect to see many future updates to the repo. In late 2025 my advice is buy the newest cheapest Mac you can find. I have the $699 bottom of the barrel stock M4 MacBook Air and its freaking awesome! Don't go the hackintosh route unless you don't like yourself, you've already got the equipment or you really like to tinker.
 
-I started building hackintoshes around 2009/2010 because I simply didn't have enough money to get the performance and speed I needed. Getting macOS to run on software it wasn't designed for is difficult but it works great if you put the time into it but... times have changed. I picked up the Mac Mini M4 Pro which runs as fast if not faster than the beast of a machine below. I also picked up the cheapest M4 MacBook Air and even with my insane requirements I have zero complaints with either system.
+I started building hackintoshes around 2009/2010 because I simply didn't have enough money to get the performance and speed I needed. Getting macOS to run on hardware it wasn't designed for is difficult but it works REALLY well if you put the time and effort into it. Times have changed. I picked up a Mac Mini M4 Pro which runs as fast if not faster than the beast of a machine below... all under 30-40W max.
 
 ### Hardware
 
