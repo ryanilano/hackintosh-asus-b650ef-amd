@@ -1,8 +1,10 @@
-## The Bittersweet End?
+## The Bittersweet End? For me, Yes.
 
 Last month Apple announced that Tahoe would be the last version of macOS to support Intel processors. Other than upgrading from Ventura to Tahoe I don't expect to see many future updates to the repo. In late 2025 my advice is buy the newest cheapest Mac you can find. I have the $699 bottom of the barrel stock M4 MacBook Air and its freaking awesome! Don't go the hackintosh route unless you don't like yourself, you've already got the equipment or you really like to tinker.
 
-I started building hackintoshes around 2009/2010 because I simply didn't have enough money to get the performance and speed I needed. Getting macOS to run on hardware it wasn't designed for is difficult but it works REALLY well if you put the time and effort into it. Times have changed. I picked up a Mac Mini M4 Pro which runs as fast if not faster than the beast of a machine below... all under 30-40W max.
+I started building hackintoshes around 2009/2010 because I simply didn't have enough money to get the performance and speed I needed. Getting macOS to run on hardware it wasn't designed for is difficult but it works REALLY well if you put the time and effort into it. Times have changed. I picked up a Mac Mini M4 Pro which runs as fast if not faster than the beast of a machine below... all under 30-40W max. My 4070TI Super idles at 10-15W under Proxmox running a headless server.
+
+**This repo is essentially retired.** I rebased and fixed a bunch of stuff and squashed history so I'm leaving it open out of courtesy for anyone who forked it.
 
 ### Hardware
 
@@ -24,14 +26,15 @@ I started building hackintoshes around 2009/2010 because I simply didn't have en
 
 | Software | Version |
 | -------- | ------- |
-| OpenCore | 1.0.2   |
+| OpenCore | 1.0.5   |
 | macOS    | 13.7.1  |
 | BIOS     | 2613    |
 
 ## Updates and Notes
 
 - I'm staying on Ventura because i didn't want to deal with the OCLP workarounds needed for wifi... broadcom / fenvi or bust baby!
-- **This config is tested and works on BIOS v1654.** Future BIOS updates (like the 9000 series support) may cause the boot sequence to hang. Shoutouts to Lorys89 for the fix: [DSDT fix](https://macos86.it/topic/6542-bug-fix-for-am5-new-firmware-motherboards-dsdt-fix/)
+- **This config is tested and works on BIOS 2613.** Future BIOS updates (like the 9000 series support) may cause the boot sequence to hang.  Shoutouts to Lorys89 for the fix: [DSDT fix](https://macos86.it/topic/6542-bug-fix-for-am5-new-firmware-motherboards-dsdt-fix/)
+I no longer have the 7900X, and my 7800X3D has a 4070TI Super and been repurposed for a local AI inference box.
 
 ## Before you Copy Paste everything...
 
@@ -45,7 +48,7 @@ I'm running Eco Mode 105W TDP which gives me 98% of the stock performance while 
 
 ## Check your Bios!
 
-Upgrading to Bios 1807 throws a bunch of errors. The issue seems to be related to ACPI/SSDT/DSDT errors that the new microcode for BIOS for the 9000 series may have borked. Reverting back to 1654 immediately fixed boot issues. I'll update when I have more time!
+This is tested up to 2613 with the 7900X tested and working fine. Leaving the striked out notes below in case you need them. ~~Upgrading to Bios 1807 throws a bunch of errors. The issue seems to be related to ACPI/SSDT/DSDT errors that the new microcode for BIOS for the 9000 series may have borked. Reverting back to 1654 immediately fixed boot issues. I'll update when I have more time!~~
 
 ## USB Map
 
